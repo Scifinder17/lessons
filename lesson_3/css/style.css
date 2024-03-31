@@ -1,0 +1,50 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* ------------------------------------- */
+
+* {
+	color: black;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: blue;
+}
+
+.header ul li{
+	color: cornflowerblue;
+}
+
+.text p{
+	color: springgreen;
+}
+
+.text.text-descr{
+	color: maroon;
+}
+
+.descr-list > li{
+	color: cadetblue;
+}
+
+.descr-list .last-item{
+	color: darkgreen;
+}
+
+.text ~ p{
+	color: gray;
+}
+
+.footer a + a{
+	color: orange;
+}
+
+[class*="link"] {
+	color: chartreuse;
+}
+
+
