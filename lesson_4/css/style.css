@@ -1,0 +1,106 @@
+/* Підключення шрифтів через плагін та google fonts */
+@import url("https://fonts.googleapis.com/css?family=Tac+One:regular&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: 'Merriweather', san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+p {
+  text-align: justify;
+}
+
+li span{
+  text-decoration: line-through red;
+}
+
+.header ul a {
+  font-family: 'PTSerif', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: blue;
+}
+
+.title {
+  font-family: 'BungeeSpice-Regular', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -2px -2px 5px rgb(0, 204, 255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-family: 'PTSerif', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  white-space: normal;
+}
+
+.descr-list{
+  font-family: 'PTSerif', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+}
+
+.descr-list li + li{
+  font-family: 'PTSerif', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(125, 44, 205);
+  word-spacing: 4px;
+}
+
+.link {
+  font-family: 'Tac One', sans-serif;
+  font-weight: 400;
+  color: rgba(44, 151, 205, 0.9);
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.top-link {
+  text-transform: lowercase;
+}
+
+.subtitle {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #2B2929;
+  text-align: center;
+}
+
+.text-block {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2B2929;
+}
+
+.list-descr {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2B2929;
+}

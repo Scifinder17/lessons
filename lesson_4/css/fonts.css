@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'BungeeSpice-Regular';
+  src: url(../fonts/BungeeSpice-Regular.woff) format('woff'),
+       url(../fonts/BungeeSpice-Regular.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: "PTSerif";
+	src: url("../fonts/PTSerif-Regular.woff2") format("woff2");
+	font-weight: regular;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PTSerif";
+	src: url("../fonts/PTSerif-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PTSerif";
+	src: url("../fonts/PTSerif-BoldItalic.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
