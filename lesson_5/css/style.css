@@ -1,0 +1,217 @@
+/* Підключення шрифтів через плагін та google fonts */
+@import url("https://fonts.googleapis.com/css?family=Tac+One:regular&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.2;
+}
+
+p {
+  text-align: justify;
+}
+
+li span{
+  text-decoration: line-through red;
+}
+
+.header {
+  background-color: goldenrod;
+  padding: 20px 0 20px 20px;
+}
+
+.header ul a {
+  font-family: 'PTSerif', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: blue;
+}
+
+.image {
+  margin-bottom: 20px;
+  width: 25%;
+  min-height: 200px;
+}
+
+.title {
+  font-family: 'BungeeSpice', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4), -2px -2px 5px rgb(0, 204, 255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  max-height: 30px;
+}
+
+.text {
+  font-family: 'PTSerif', sans-serif;
+  line-height: 150%;
+  white-space: normal;
+}
+
+.text-descr {
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.descr-list{
+  padding: 1%;
+  font-family: 'PTSerif', sans-serif;
+  font-size: 14px;
+  max-width: 50%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.descr-list li + li{
+  font-family: 'PTSerif', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(125, 44, 205);
+  word-spacing: 4px;
+}
+
+.link {
+  font-family: 'Tac One', sans-serif;
+  color: rgba(44, 151, 205, 0.9);
+  text-decoration: underline;
+  text-transform: capitalize;
+  vertical-align: middle;
+}
+
+.top-link {
+  text-transform: lowercase;
+}
+
+.subtitle {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #2B2929;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.text-block {
+  font-family: "Proxima Nova";
+  line-height: 30px;
+  color: #2B2929;
+}
+
+.list-descr {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2B2929;
+  margin-bottom: 30px;
+}
+
+.krovato {
+  max-width: 1070px;
+  margin: 40px auto;
+}
+
+.furniture {
+  margin-bottom: 40px;
+}
+
+.bed-decor{
+  margin: 40px auto;
+}
+
+.krovato .text-block + .text-block {
+  margin-bottom: 40px;
+}
+
+.list {
+  max-width: 1070px;
+  margin-bottom: 40px;
+}
+
+.list li {
+  padding-left: 47px;
+  margin-bottom: 20px;
+}
+
+.krovato-lg {
+  max-width: 1290px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding-bottom: 70px;
+}
+
+.benefits {
+font-size: 0;
+}
+
+.benefits-item {
+  display: inline-block;
+  max-width: 25%;
+  font-family: "Proxima Nova";
+  text-align: center;
+  font-size: 16px;
+  vertical-align: top;
+  padding: 0 15px;
+}
+
+.benefits-img {
+  margin-bottom: 20px;
+}
+
+.benefits-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #2B2929;
+}
+
+.benefits-text {
+  text-align: center;
+  line-height: 30px;
+}
+
+.ecommerce{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.title-follow{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+.cards{
+  text-align: center;
+  font-size: 0;
+}
+
+.cards-img + .cards-img { 
+  margin-left: 24px;
+}
+
+footer {
+  padding-bottom: 10px;
+}
