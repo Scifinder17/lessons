@@ -1,0 +1,197 @@
+/* Підключення шрифтів через плагін та google fonts */
+@import url("https://fonts.googleapis.com/css?family=Tac+One:regular&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color:blue;
+  text-align: center;
+  font-size: 64px;
+  outline: black 3px solid;
+}
+
+.subtitle {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #2B2929;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.text-block {
+  font-family: "Proxima Nova";
+  line-height: 30px;
+  color: #2B2929;
+  text-align: left;
+}
+
+.list-descr {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2B2929;
+  margin-bottom: 30px;
+}
+
+.krovato {
+  max-width: 1070px;
+  margin: 0 auto 40px auto;
+  background-color: #f7f7f7;
+}
+
+.furniture {
+  margin-bottom: 40px;
+}
+
+.krovato .text-block + .text-block {
+  margin-bottom: 40px;
+}
+
+.list {
+  max-width: 1070px;
+  margin-bottom: 40px;
+}
+
+.list li {
+  padding-left: 47px;
+  margin-bottom: 20px;
+  background: url("../img/checked.svg") 0% 5% no-repeat;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.courses {
+  background: url("../img/background_courses.jpg") center / cover hsl(263deg 100% 65%);
+  margin-bottom: 100px;
+}
+
+.courses-content {
+  max-width: 600px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 120px;
+}
+
+.heading {
+  font-family: Quicksand;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 120% */
+color: #fff;
+margin-bottom: 24px;
+}
+
+.courses-text {
+  font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 32px; /* 160% */
+color: #fff;
+margin-bottom: 24px;
+}
+
+.courses-link {
+  color: #0D1216;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 8px;
+  background: url("../img/hat.png") 20px no-repeat #FFF;
+  padding: 11.5px 20px 11.5px 40px;
+}
+
+.courses-img {
+  margin-left: 133px;
+}
+
+.ecommerce {
+  padding: 225px 0 60px 0;
+  /* background: rgba(30, 40, 50, 0.05); */
+  background: url(../img/left-tree.svg) left 600px no-repeat, 
+  url(../img/right-tree.svg) right 350px no-repeat, rgba(30, 40, 50, 0.05);
+}
+
+.ecommerce-inner {
+  margin: 0 -49px;
+}
+
+.ecommerce-collections {
+  display: inline-block;
+  max-width: 682px;
+  color: #000;
+  padding: 0 49px;
+  margin-top: 65px;
+}
+
+.ecommerce-title {
+font-family: Roboto;
+font-size: 74px;
+font-weight: 300;
+line-height: 55px; /* 74.324% */
+text-transform: capitalize;
+margin-bottom: 52px;
+}
+
+.ecommerce-text {
+font-family: Roboto;
+font-size: 30px;
+font-weight: 400;
+line-height: 55px; /* 183.333% */
+text-transform: capitalize;
+margin-bottom: 66px;
+}
+
+.ecommerce-link {
+font-family: Roboto;
+font-size: 29px;
+font-weight: 400;
+line-height: 1.2;
+text-transform: capitalize;
+color: #fff;
+padding-block: 19px;
+width: 223px;
+padding-right: 27px;
+text-align: right;
+background: url("../img/shop-icon.svg") 26px no-repeat #1E2832;
+}
+
+.ecommerce-image {
+  vertical-align: top;
+  display: inline-block;
+  /* box-shadow: 18px 20px 1px black; */
+  padding: 0 49px;
+}
+
+.image-box {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 160px 0;
+}
+
+.ecommerce-image img {
+  border-radius: 160px 0px;
+  margin: -20px 18px 20px -18px;
+}
+
+footer {
+  padding-bottom: 10px;
+}
