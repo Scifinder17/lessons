@@ -1,0 +1,386 @@
+/* Підключення шрифтів через плагін та google fonts */
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+header h1 {
+  font-size: 64px;
+}
+
+h1 {
+  color:blue;
+  text-align: center;
+  font-size: 64px;
+  outline: black 3px solid;
+}
+
+.subtitle {
+  font-family: "Proxima Nova";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #2B2929;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.text-block {
+  font-family: "Proxima Nova";
+  line-height: 30px;
+  color: #2B2929;
+  text-align: left;
+}
+
+.list-descr {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #2B2929;
+  margin-bottom: 30px;
+}
+
+.krovato {
+  max-width: 1070px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+.furniture {
+  margin-bottom: 40px;
+}
+
+.krovato .text-block + .text-block {
+  margin-bottom: 40px;
+}
+
+.list {
+  max-width: 1070px;
+  margin-bottom: 40px;
+}
+
+.list li {
+  padding-left: 47px;
+  margin-bottom: 20px;
+  background: url("../img/checked.svg") 0% 5% no-repeat;
+}
+
+.about {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.89) 0%, rgba(0, 0, 0, 0.98) 85.54%), lightgray 0px -95.915px / 100% 161.298% url("../img/portfolio-bg.jpg") no-repeat;
+  color: #FFF;
+  font-family: Exo;
+  padding: 120px 0;
+}
+
+.container-l {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.about-block {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-title {
+font-size: 60px;
+font-weight: 700;
+line-height: 70px; /* 116.667% */
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.about-title::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+  display: block;
+  margin: 20px auto 0;
+}
+
+.about-text {
+  max-width: 992px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px; /* 222.222% */
+  letter-spacing: -0.36px;
+  text-transform: capitalize;
+}
+
+.about-bottom {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 80px;
+}
+
+.about-list {
+  font-size: 0;
+}
+
+.about-item {
+  display: inline-block;
+  font-family: Orbitron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+  text-transform: capitalize;
+}
+
+.about-item::after {
+  content: "";
+  background: url(../img/ellipse.svg);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 60px;
+  vertical-align: middle;
+}
+
+.about-item:not(:first-child) {
+  margin-left: 60px;
+}
+
+.about-footer {
+  text-align: center;
+}
+
+.footer-item {
+  display: inline-block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+
+.footer-item::before {
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+.footer-item:first-child::before {
+  content: "";
+  background: url("../img/call.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-item:nth-child(2)::before {
+  content: "";
+  background: url("../img/location.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-item:last-child::before {
+  content: "";
+  background: url("../img/mail.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-item:last-child {
+  text-transform: lowercase;
+}
+
+.footer-item:not(:first-child) {
+  margin-left: 80px;
+}
+
+/* game */
+.game {
+	min-height: 650px;
+	text-align: initial;
+	margin-top: 30px;
+	font-size: 0;
+  background-color: brown;
+  margin-bottom: 50px;
+}
+
+.game * {
+  background-color: aqua;
+}
+
+.game img {
+  display: none;
+}
+
+.game__line-1 {
+  width: 50px;
+  height: 50px;
+}
+
+.game__line-1:hover ~ .game__line-2,
+.game__line-2:hover,
+.game__line-3:hover {
+  visibility: visible;
+}
+
+.game__line-2 {
+  display: inline-block;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.game__line-2:hover ~ .game__line-3 {
+  visibility: visible;
+}
+
+.game__line-3 {
+  display: inline-block;
+  visibility: hidden;
+  width: 1000px;
+  height: 50px;
+}
+
+.game__line-3:hover ~ .game__line-4 {
+  visibility: visible;
+}
+
+.game__line-4 {
+  display: inline-block;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.game__line-4:hover,
+.game__line-4:hover ~ .game__line-6 {
+  visibility: visible;
+}
+
+.game__line-5 {
+  visibility: hidden;
+  width: 1050px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.game__line-6 {
+  display: inline-block;
+  visibility: hidden;
+  width: 50px;
+  height: 150px;
+}
+
+.game__line-6:hover {
+  visibility: visible;
+}
+
+
+.game__line-7 {
+  display: block;
+  visibility: hidden;
+  width: 1100px;
+  height: 25px;
+}
+
+.game__line-6:hover ~ .game__line-7 {
+  visibility: visible;
+}
+
+.game__line-7:hover {
+  visibility: visible;
+}
+
+.game__line-7:hover ~ .game__line-8 {
+  visibility: visible;
+}
+
+.game__line-8 {
+  display: inline-block;
+  visibility: hidden;
+  width: 15px;
+  height: 100px;
+}
+
+.game__line-8:hover {
+  visibility: visible;
+}
+
+.game__line-8:hover ~ .game__line-9 {
+  visibility: visible;
+}
+
+.game__line-9 {
+  display: block;
+  visibility: hidden;
+  width: 15px;
+  height: 25px;
+  background-color: chartreuse;
+}
+
+.game__line-9:hover {
+  visibility: visible;
+}
+
+.game__line-9:hover ~ img {
+  display: inline-block;
+}
+
+.game > img:hover {
+  display: inline-block;
+}
+
+.training {
+  text-align: center;
+}
+
+.link {
+  max-width: 300px;
+  padding: 20px 40px;
+  display: inline-block;
+  font-size: 32px;
+  border: 2px solid #1E2832;
+  border-radius: 15px;
+}
+
+.link:not(:first-child) {
+  margin-left: 30px;
+}
+
+.link:focus {
+  color: #2400FF;
+}
+
+.link:focus-visible {
+  color: cadetblue;
+}
+
+.link-2:focus-visible {
+  border: 2px dashed #0D1216;
+  color: cadetblue;
+  outline: 2px dashed cadetblue;
+}
+
+.training a:first-of-type:hover {
+  box-shadow: 2px 2px 5px 2px #42FF00;
+  color: #5a4a4a;
+}
+
+.training a:last-of-type:hover {
+  box-shadow: 2px 2px 5px 2px #4967ca;
+  color: #7f9239;
+}
+
+.training a:nth-child(2):hover {
+  box-shadow: 2px 2px 5px 2px #ca4990;
+  color: #23472b;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
