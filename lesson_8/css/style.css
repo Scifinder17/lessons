@@ -1,0 +1,103 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: "Quicksand", sans-serif;
+	background-color: #ad7373;
+	color: #fff;
+}
+.page {
+	padding: 30px;
+}
+
+/* --------------------- */
+
+.header {
+	margin-bottom: 50px;
+	border-bottom: 3px solid bisque;
+}
+
+.title {
+	font-size: 64px;
+	color: bisque;
+	text-align: center;
+}
+
+.main {
+	margin-bottom: 50px;
+}
+
+.container {
+	max-width: 1380px;
+	margin: 0 auto;
+}
+
+.box {
+	font-size: 28px;
+	text-align: center;
+}
+
+.box:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.box img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.box-icon,
+.box-icon-up,
+.box-icon-down
+ {
+	text-align: center;
+	font-size: 28px;
+}
+
+.box-icon:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.box-icon::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background: url("../img/question.svg") no-repeat;
+}
+
+.box-icon-up {
+	margin-bottom: 30px;
+}
+
+.box-icon-up::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background: url("../img/arrow-up.svg") no-repeat;
+}
+
+.box-icon-down::before {
+	content: "";
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background: url("../img/arrow-down.svg") no-repeat;
+}
+
+.footer p {
+		font-size: 64px;
+		color: bisque;
+		text-align: center;
+		border-top: 3px solid bisque;
+}
+/* .box {
+	text-align: center;
+} */
+
+/* .descr {
+} */
