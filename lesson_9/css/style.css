@@ -1,0 +1,88 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+  color: black;
+}
+
+.header__top {
+  background-color: #b1b1b1;
+}
+
+.help__language::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/arrow.svg") no-repeat;
+}
+
+.phone {
+  display: inline-block;
+}
+
+.phone__text {
+  display: inline-block;
+}
+
+.proposition__item {
+  display: inline-block;
+}
+
+.proposition__link--promotion::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/promo.svg") no-repeat;
+}
+
+.proposition__link--sale::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/sale.svg") no-repeat;
+}
+
+.proposition__link--credit::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/credit.svg") no-repeat;
+}
+
+.most-popular__title span {
+  padding-right: 15px;
+}
+
+.most-popular__title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../img/arrow-title.svg") no-repeat;
+}
+
+.most-popular__stock::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/check.svg") no-repeat;
+}
+
+.most-popular__icon {
+  vertical-align: middle;
+}
+
+/* .card__title {
+  margin-bottom: 90px;
+}
+
+.page {
+  background-color: #b1b1b1;
+}
+
+.popular__item {
+  background-color: #fff;
+  display: inline-block;
+} */
