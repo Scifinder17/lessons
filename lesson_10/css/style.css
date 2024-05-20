@@ -1,0 +1,247 @@
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	background-color: #f8f8f8;
+	font-family: "ProximaNova", sans-serif;
+	color: #fff;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+/* --------------------- */
+
+.header {
+	background-color: cornsilk;
+	padding: 50px 0;
+	position: relative;
+}
+
+.header__container {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.header__logo {
+	margin-right: 34px;
+}
+
+.header__catalog {
+	color: #FFF;
+	font-family: "Proxima Nova";
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 24px; 
+	background-color: #FFBC57;
+	padding: 11px 20px 11px 20px;
+	border-radius: 8px;
+}
+
+.header__catalog::before {
+	content: "";
+	background: url("../img/menu-catalog.svg") 1px no-repeat;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.menu {
+	display: none;
+	min-width: 300px;
+	background-color: #fff;
+	border-radius: 8px;
+	position: absolute;
+	top: 110%;
+	z-index: 20;
+}
+
+.menu:target {
+	display: block;
+}
+
+.menu__list {
+	position: relative;
+}
+
+.menu__item {
+	padding: 10px 15px 10px 30px;
+	/* position: relative; */
+	cursor: pointer;
+}
+
+.menu__item:hover {
+	background-color: #FFBC57;
+}
+
+.menu__item::after {
+	content: "";
+	background: url("../img/arrow-right.svg") no-repeat;
+	position: absolute;
+	right: 18px;
+	width: 24px;
+	height: 24px;
+}
+
+.menu__icon {
+	margin-right: 15px;
+}
+
+.menu__link {
+	color: #2B2929;
+	font-family: "Proxima Nova";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px; /* 140% */
+	margin-top: 5px;
+}
+
+.sub-menu {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 10;
+	background-color: #fff;
+	min-width: 306px;
+	height: 600px;
+	border-radius: 8px;
+	overflow-y: auto;
+	display: none;
+}
+
+.sub-menu::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -2px;
+	height: calc(100% - 16px);
+	border-left: 5px solid #FFBC57;
+}
+
+.sub-menu__item {
+	color: #2B2929;
+	font-family: "Proxima Nova";
+	font-size: 19px;
+	line-height: 40px;
+	padding: 10px 21px 10px 34px;
+}
+
+.sub-menu__item:hover {
+	background-color: #FFBC57;
+}
+
+.menu__item--1:hover .sub-menu {
+	display: block;
+}
+
+.menu__item--2:hover .sub-menu {
+	display: block;
+}
+
+.popular {
+	padding: 70px 0;
+}
+
+.popular__container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.poular__title {
+	color: #2B2929;
+	font-family: "Proxima Nova";
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48px; /* 120% */
+	margin-bottom: 40px;
+}
+
+.cards {
+	font-size: 0;
+	margin: -12px -5px;
+}
+
+.cards__item {
+	border-radius: 8px;
+	display: inline-block;
+	z-index: 10;
+	padding-block: 12px;
+	overflow: hidden;
+	padding-inline: 5px;
+}
+
+/* .cards__item:not(:last-child) {
+	margin-right: 10px;
+} */
+
+.cards__item:hover .cards__link{
+	box-shadow: 5px 5px 5px rgba(43, 41, 41, 0.3);
+}
+
+/* .cards__link{
+	box-shadow: 5px 5px 5px #2B2929;
+} */
+
+.cards__link {
+	overflow: clip;
+	background-color: #fff;
+	position: relative;
+}
+
+.cards__link::before {
+	content: "";
+	background-color: #f8f8f8;
+	position: absolute;
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	bottom: -65px;
+	opacity: 0.9;
+	left: -15px;
+}
+
+.cards__title {
+	color: #2B2929;
+	font-family: "Proxima Nova";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px; /* 140% */
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.cards__link::after {
+	content: "";
+	background: url("../img/cards-arrow.svg") no-repeat;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+}
+
+.cards__number {
+	color: #B1B1B1;
+	font-family: "Proxima Nova";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 28px; /* 140% */
+	position: absolute;
+  right: 20px;
+	top: 20px;
+}
+
+.cards__img {
+	position: relative;
+	z-index: 10;
+}
